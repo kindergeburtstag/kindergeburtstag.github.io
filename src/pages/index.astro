@@ -8,7 +8,8 @@ import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import kindergeburtstagSpieleBild from '~/assets/images/Kindergeburtstag-Spiele-Ideen.jpg';
+import { Image } from 'astro:assets';
+import KindergeburtstagSpiele from '../assets/images/Kindergeburtstag-Spiele-Ideen.jpg';
 
 const metadata = {
   title: 'Kindergeburtstag Ideen 🎂 | Beste Mottos, Spiele & Tipps!',
@@ -66,7 +67,7 @@ const metadata = {
   ]}
 >
 <Fragment slot="image">
-  <img src="/images/Kindergeburtstag-Spiele-Ideen.jpg" alt="Kinder spielen auf einer Party" class="rounded-lg shadow-lg transition-transform transform hover:scale-105"/>
+  <Image src={KindergeburtstagSpiele} alt="A bird sitting on a nest of eggs." />
 </Fragment>
 
 </Content>
