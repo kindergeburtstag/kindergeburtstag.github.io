@@ -5,12 +5,12 @@ import Header from '~/components/widgets/Header.astro';
 
 import Features from '~/components/widgets/Features.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Content from '~/components/widgets/Content.astro';
+import Content from '~/components/widgets/ContentColorBG.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 import kindergeburtstagBild from '../../assets/images/kindergeburtstag-ideen-4-jahre.jpg';
-
+import kindergeburtstagvierjahrespieleideen from '../../assets/images/kindergeburtstag-4-jahre-spiele-ideen.jpg';
 const metadata = {
   title: "🎂 Kindergeburtstag Ideen für 4-Jährige – Spiele, Mottos & Planung!",
   description: "Die besten Kindergeburtstag Ideen für 4-Jährige 🎁. Mottos, Spiele, Checklisten & Planungstipps für eine stressfreie und fröhliche Feier!",
@@ -167,40 +167,43 @@ items={[
 <!-- Content Widget **************** -->
 
 <Content
+
+id="spiele"
+class="bg-yellow-50 p-8 rounded-lg"
 isReversed
 items={[
   {
     title: '🏡 1. Indoor-Spiele – Perfekt für Zuhause',
     description:
-      'An intuitive and easy-to-navigate interface that allows users to quickly browse and find the templates they need.',
+      'Wenn das Wetter nicht mitspielt, gibt es viele lustige Spiele, die drinnen für Spaß sorgen – von Bewegungsspielen wie Luftballon-Tanz bis zu kreativen Bastelideen für kleine Künstler. 🎈🎨 <br><b><a href="#indoor-spiele">Mehr Infos zu den Indoor Spielen</a></b>',
   },
   {
-    title: '🎈 Luftballon-Tanz',
+    title: '🌳 2. Outdoor-Spiele – Toben & Spaß im Freien',
     description:
-      'Include basic customization tools that let users modify text, colors, images, and other elements within the templates.',
-    icon: 'tabler:settings',
+      'Frische Luft und Bewegung machen den Kindergeburtstag noch aufregender – von einer spannenden Schatzsuche im Garten bis hin zu lustigen Hindernis-Parcours gibt es viele tolle Spielideen für draußen. 🌞🏃‍♂️<br><b><a href="#outdoor-spiele">Mehr Infos zu den Outdoor Spielen</a></b>',
   },
   {
-    title: 'Ready-to-use components',
+    title: '🎨 3. Kreativ- & Bastelspiele – Ruhige Alternativen',
     description:
-      'Enhance your designs with ready-to-use elements like graphics, icons, and layouts, saving you time and boosting visual appeal.',
-    icon: 'tabler:template',
+      'Perfekt für kleine Künstler: Ob Malen mit Fingerfarben, Masken basteln oder selbstgemachte Instrumente gestalten – hier können die Kinder ihrer Fantasie freien Lauf lassen und tolle Erinnerungen mit nach Hause nehmen. 🎭✨<br><b><a href="#kreative-spiele">Mehr Infos zu den kreativen Spielen</a></b>',
   },
   {
-    title: 'Preview Mode',
-    description: 'Provide a preview of each template, allowing users to see how it looks before making a purchase.',
-    icon: 'tabler:carousel-horizontal',
+    title: '🤹 4. Lustige Bewegungsspiele – Energie abbauen!',
+    description: 'Für aktive 4-Jährige sind Bewegungsspiele perfekt – ob Froschhüpfen, das spannende Ampelspiel oder ein lustiger Affentanz, hier können sich die Kinder richtig austoben und gemeinsam Spaß haben. 🏃‍♂️🎈<br><b><a href="#lustige-spiele">Mehr Infos zu den lustigen Spielen</a></b>',
   },
 ]}
 image={{
-  src: 'https://images.unsplash.com/photo-1576153192621-7a3be10b356e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
+  src: kindergeburtstagvierjahrespieleideen,
   alt: 'Colorful Image',
 }}
 >
 <Fragment slot="content">
   <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Spiele für den 4. Geburtstag <br> Großer Spaß für kleine Entdecker!</h2>
+</div>
 </Fragment>
 </Content>
+
+
 
   <!-- Features2 Widget ************** -->
 
