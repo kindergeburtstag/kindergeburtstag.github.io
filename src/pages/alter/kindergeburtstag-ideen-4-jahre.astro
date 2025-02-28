@@ -1,10 +1,12 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
 
+
+import Features from '~/components/widgets/Features.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import { Image } from 'astro:assets';
 import kindergeburtstagBild from '../../assets/images/kindergeburtstag-ideen-4-jahre.jpg';
-
 
 
 const metadata = {
@@ -15,57 +17,148 @@ const metadata = {
 };
 ---
 <Layout metadata={metadata}>
-  <!-- ✅ JSON-LD Schema korrekt eingebunden -->
-  <script type="application/ld+json">
-   {`
-     {
-       "@context": "https://schema.org",
-       "@type": "Article",
-       "headline": "Kindergeburtstag Ideen für 4-Jährige – Spiele, Mottos & Planung!",
-       "description": "Finde die besten Kindergeburtstag Ideen für 4-Jährige: Mottos, Spiele, Checklisten & Planungstipps für eine stressfreie und fröhliche Feier!",
-       "author": {
-         "@type": "Person",
-         "name": "Marco Czerny"
-       },
-       "publisher": {
-         "@type": "Organization",
-         "name": "Kindergeburtstag-Ideen",
-         "logo": {
-           "@type": "ImageObject",
-           "url": "https://deine-website.com/logo.png"
-         }
-       },
-       "datePublished": "2025-02-27",
-       "mainEntityOfPage": "https://deine-website.com/kindergeburtstag-ideen-4-jahre"
-     }
-   `}
+ <!-- schema.org ******************* -->
+
+ <script type="application/ld+json">
+  {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Kindergeburtstag Ideen für 4-Jährige – Spiele, Mottos & Planung!",
+      "description": "Finde die besten Kindergeburtstag Ideen für 4-Jährige: Mottos, Spiele, Checklisten & Planungstipps für eine stressfreie und fröhliche Feier!",
+      "author": {
+        "@type": "Person",
+        "name": "Marco Czerny"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kindergeburtstag-Ideen",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://deine-website.com/logo.png"
+        }
+      },
+      {
+               "@type": "Question",
+               "name": "Welche Spiele sind für 4-Jährige geeignet?",
+               "acceptedAnswer": {
+                   "@type": "Answer",
+                   "text": "Spiele wie Stopptanz, Schatzsuche, Luftballontanz oder Kinderschminken sind perfekt für einen Kindergeburtstag mit 4-Jährigen."
+               }
+           },
+           {
+               "@type": "Question",
+               "name": "Wie lange sollte der Geburtstag dauern?",
+               "acceptedAnswer": {
+                   "@type": "Answer",
+                   "text": "Für 4-jährige Kinder sind 1,5 bis 3 Stunden ideal, da sie sich noch nicht lange konzentrieren können."
+               }
+           },
+      {
+               "@type": "Question",
+               "name": "Wie viele Kinder sollte ich einladen?",
+               "acceptedAnswer": {
+                   "@type": "Answer",
+                   "text": "Faustregel: Alter des Kindes + 1 = Maximal 5 Gäste für eine entspannte Kindergeburtstagsfeier."
+               }
+           },
+      "datePublished": "2025-02-27",
+      "mainEntityOfPage": "https://kindergeburtstag.github.io/alter/kindergeburtstag-ideen-4-jahre"
+    }
+  `}
 </script>
 
-  <!-- Hero2 Widget ******************* -->
+<!-- menü ******************* -->
 
-  <Hero2
-    tagline="SaaS Web Demo"
-    actions={[
-      { variant: 'primary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
-      { text: 'Learn more', href: '#features' },
-    ]}
-    image={{
-      src: kindergeburtstagBild,
-      alt: 'AstroWind Hero Image',
-    }}
-  >
-    <Fragment slot="title">
-      Simplify web design with Astrowind: <br /> your ultimate <span class="text-accent dark:text-white highlight"
-        >SaaS</span
-      > companion<br />
-    </Fragment>
+<Fragment slot="announcement"></Fragment>
+<Fragment slot="header">
+<Header
+  position="left"
+  links={[
+    { text: 'Mottos', href: '#mottos' },
+    { text: 'Spiele', href: '#spiele' },
+    { text: 'Planung', href: '#planung' },
+    { text: 'FAQ', href: '#faq' },
+  ]}
+  actions={[
+    {
+      text: 'KI Schnitzeljagd',
+      href: '#form',
+    },
+  ]}
+  isSticky
+  showToggleTheme
+/>
+</Fragment>
 
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        Elevate your website creation process with <span class="font-semibold">AstroWind</span>'s SaaS solutions.</span
-      >
-      Seamlessly blend the power of Astro 5.0 and Tailwind CSS to craft websites that resonate with your brand and audience.
-    </Fragment>
-  </Hero2>
 
+<!-- Hero ******************* -->
+
+<Hero2
+tagline="Spiele, Mottos & Planung"
+actions={[
+  { variant: 'primary', target: '_blank', text: 'Die besten Spiele', href: 'https://github.com/onwidget/astrowind' },
+  { text: 'Angesagte Mottos', href: '#mottos' },
+]}
+image={{
+  src: kindergeburtstagBild,
+  alt: 'AstroWind Hero Image',
+}}
+>
+<Fragment slot="title">
+  Kindergeburtstag Ideen <span class="text-accent dark:text-white highlight"
+    >für 4-Jährige</span
+  > <br />
+</Fragment>
+
+<Fragment slot="subtitle">
+  <span class="hidden sm:inline">
+    Plane eine unvergessliche <span class="font-semibold">Kinderparty</span>mit kreativen Mottos, lustigen Spielen & cleveren Planungstipps! 🎈</span
+  > <br>
+  Der 4. Geburtstag ist ein aufregendes Event! In diesem Alter haben Kinder oft ihre ersten besten Freunde und lieben fantasievolle Spielwelten.
+</Fragment>
+</Hero2>
+
+<!-- Mottos *************** -->
+
+<Features
+id="mottos"
+title="🎭 Die besten Mottos für den 4. Geburtstag"
+subtitle="Each of the following features enhances AstroWind's value proposition."
+columns={2}
+items={[
+  {
+    title: 'Integration of Astro 5.0 and Tailwind CSS',
+    description:
+      'Offers a powerful combination that enhances both the development process and the end-user experience. Also, allows to build dynamic and visually stunning websites with optimized performance.',
+    icon: 'tabler:layers-union',
+  },
+  {
+    title: 'Versatile design for startups, small businesses, and more',
+    description: `Easily customize AstroWind to harmonize with the unique branding and identity of your venture. AstroWind's versatile design adapts to suit your needs.`,
+    icon: 'tabler:artboard',
+  },
+  {
+    title: 'Effortless customization for portfolios and marketing sites',
+    description:
+      'With intuitive customization, easily showcase portfolio pieces, case studies, project highlights, and relevant content. Ideal for creative professionals and businesses looking to highlight their expertise.',
+    icon: 'tabler:writing',
+  },
+  {
+    title: 'Optimized landing pages and engaging blogs',
+    description: `Landing pages are strategically designed to captivate visitors and prompt specific actions. Additionally, the blog creation feature empowers sharing insights, engaging the audience.`,
+    icon: 'tabler:podium',
+  },
+  {
+    title: 'Fast loading times and production-ready code',
+    description: `Using Astro 5.0 ensures fast loading and seamless rendering, enhancing browsing. The code follows best practices, improving user experience, SEO, and reducing bounce rates.`,
+    icon: 'tabler:rocket',
+  },
+  {
+    title: 'SEO-optimized structure for enhanced visibility',
+    description: `Follows SEO best practices with clean code, semantic HTML markup, and fast loading, enhancing search engine rankings. AstroWind's SEO structure ensures visibility to potential customers and clients.`,
+    icon: 'tabler:eyeglass',
+  },
+]}
+/>
 </Layout>
