@@ -3,6 +3,27 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
+      text: 'Alter',
+      links: [
+        {
+          text: '4 Jahre',
+          href: getPermalink('/homes/saas'),
+        },
+        {
+          text: '5 Jahre',
+          href: getPermalink('/homes/startup'),
+        },
+        {
+          text: '6 Jahre',
+          href: getPermalink('/homes/mobile-app'),
+        },
+        {
+          text: '7 Jahre',
+          href: getPermalink('/homes/personal'),
+        },
+      ],
+    },
+    {
       text: 'Homes',
       links: [
         {
@@ -107,6 +128,10 @@ export const headerData = {
         {
           text: 'Tag Page',
           href: getPermalink('astro', 'tag'),
+        },
+        {
+          text: 'Kindergeburtstag Ideen',
+          href: getPermalink('kindergeburtstag-ideen-fur-4-jahrige-perfekte-tipps-fur-eine-unvergessliche-feier', 'post'),
         },
       ],
     },
