@@ -7,7 +7,7 @@ export const headerData = {
       links: [
         {
           text: '4 Jahre',
-          href: getPermalink('/homes/saas'),
+          href: getPermalink('/alter/kindergeburtstag-ideen-4-jahre'),
         },
         {
           text: '5 Jahre',

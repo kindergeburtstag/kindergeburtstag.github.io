@@ -2,10 +2,9 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero2 from '~/components/widgets/Hero2.astro';
+import { Image } from 'astro:assets';
+import kindergeburtstagBild from '../../assets/images/kindergeburtstag-ideen-4-jahre.jpg';
 
-import kindergeburtstagBild from '../../assets/images/kindergeburtstag-4-jahre-kinder.jpg';
-
----
 
 
 const metadata = {
@@ -15,55 +14,58 @@ const metadata = {
   canonical: "https://kindergeburtstag.github.io//kindergeburtstag-ideen-4-jahre",
 };
 ---
-
 <Layout metadata={metadata}>
-   <!-- ✅ JSON-LD Schema korrekt eingebunden -->
-   <script type="application/ld+json">
-    {`
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Kindergeburtstag Ideen für 4-Jährige – Spiele, Mottos & Planung!",
-        "description": "Finde die besten Kindergeburtstag Ideen für 4-Jährige: Mottos, Spiele, Checklisten & Planungstipps für eine stressfreie und fröhliche Feier!",
-        "author": {
-          "@type": "Person",
-          "name": "Marco Czerny"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Kindergeburtstag-Ideen",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://deine-website.com/logo.png"
-          }
-        },
-        "datePublished": "2025-02-27",
-        "mainEntityOfPage": "https://deine-website.com/kindergeburtstag-ideen-4-jahre"
-      }
-    `}
+  <!-- ✅ JSON-LD Schema korrekt eingebunden -->
+  <script type="application/ld+json">
+   {`
+     {
+       "@context": "https://schema.org",
+       "@type": "Article",
+       "headline": "Kindergeburtstag Ideen für 4-Jährige – Spiele, Mottos & Planung!",
+       "description": "Finde die besten Kindergeburtstag Ideen für 4-Jährige: Mottos, Spiele, Checklisten & Planungstipps für eine stressfreie und fröhliche Feier!",
+       "author": {
+         "@type": "Person",
+         "name": "Marco Czerny"
+       },
+       "publisher": {
+         "@type": "Organization",
+         "name": "Kindergeburtstag-Ideen",
+         "logo": {
+           "@type": "ImageObject",
+           "url": "https://deine-website.com/logo.png"
+         }
+       },
+       "datePublished": "2025-02-27",
+       "mainEntityOfPage": "https://deine-website.com/kindergeburtstag-ideen-4-jahre"
+     }
+   `}
 </script>
 
   <!-- Hero2 Widget ******************* -->
+
   <Hero2
-  tagline="Kindergeburtstag Ideen für 4-Jährige"
-  actions={[
-    { variant: 'primary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
-    { text: 'Learn more', href: '#features' },
-  ]}
-    <Image src={'kindergeburtstagBild'} alt="Kindergeburtstag Ideen für 4 Jährige" />
+    tagline="SaaS Web Demo"
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
+      { text: 'Learn more', href: '#features' },
+    ]}
+    image={{
+      src: kindergeburtstagBild,
+      alt: 'AstroWind Hero Image',
+    }}
   >
-  <Fragment slot="title">
-    Simplify web design with Astrowind: <br /> your ultimate <span class="text-accent dark:text-white highlight"
-      >SaaS</span
-    > companion<br />
-  </Fragment>
-  
-  <Fragment slot="subtitle">
-    <span class="hidden sm:inline">
-      Elevate your website creation process with <span class="font-semibold">AstroWind</span>'s SaaS solutions.</span
-    >
-    Seamlessly blend the power of Astro 5.0 and Tailwind CSS to craft websites that resonate with your brand and audience.
-  </Fragment>
+    <Fragment slot="title">
+      Simplify web design with Astrowind: <br /> your ultimate <span class="text-accent dark:text-white highlight"
+        >SaaS</span
+      > companion<br />
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Elevate your website creation process with <span class="font-semibold">AstroWind</span>'s SaaS solutions.</span
+      >
+      Seamlessly blend the power of Astro 5.0 and Tailwind CSS to craft websites that resonate with your brand and audience.
+    </Fragment>
   </Hero2>
 
 </Layout>
