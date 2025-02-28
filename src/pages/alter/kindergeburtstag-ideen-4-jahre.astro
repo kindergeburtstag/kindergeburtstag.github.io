@@ -4,10 +4,12 @@ import Header from '~/components/widgets/Header.astro';
 
 
 import Features from '~/components/widgets/Features.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Content from '~/components/widgets/Content.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
-import { Image } from 'astro:assets';
-import kindergeburtstagBild from '../../assets/images/kindergeburtstag-ideen-4-jahre.jpg';
+import Features2 from '~/components/widgets/Features2.astro';
 
+import kindergeburtstagBild from '../../assets/images/kindergeburtstag-ideen-4-jahre.jpg';
 
 const metadata = {
   title: "🎂 Kindergeburtstag Ideen für 4-Jährige – Spiele, Mottos & Planung!",
@@ -161,4 +163,119 @@ items={[
   },
 ]}
 />
+
+<!-- Content Widget **************** -->
+
+<Content
+isReversed
+items={[
+  {
+    title: '🏡 1. Indoor-Spiele – Perfekt für Zuhause',
+    description:
+      'An intuitive and easy-to-navigate interface that allows users to quickly browse and find the templates they need.',
+  },
+  {
+    title: '🎈 Luftballon-Tanz',
+    description:
+      'Include basic customization tools that let users modify text, colors, images, and other elements within the templates.',
+    icon: 'tabler:settings',
+  },
+  {
+    title: 'Ready-to-use components',
+    description:
+      'Enhance your designs with ready-to-use elements like graphics, icons, and layouts, saving you time and boosting visual appeal.',
+    icon: 'tabler:template',
+  },
+  {
+    title: 'Preview Mode',
+    description: 'Provide a preview of each template, allowing users to see how it looks before making a purchase.',
+    icon: 'tabler:carousel-horizontal',
+  },
+]}
+image={{
+  src: 'https://images.unsplash.com/photo-1576153192621-7a3be10b356e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
+  alt: 'Colorful Image',
+}}
+>
+<Fragment slot="content">
+  <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Spiele für den 4. Geburtstag <br> Großer Spaß für kleine Entdecker!</h2>
+</Fragment>
+</Content>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    id="planung"
+    title="Checkliste für die stressfreie Planung<br>des 4. Geburtstages 📅"
+    subtitle="Mit einer guten Vorbereitung wird der Geburtstag entspannt und unvergesslich! Hier ist eine Schritt-für-Schritt-Checkliste, damit du nichts vergisst:"
+    items={[
+      {
+        title: '4 Wochen vorher 🗓 Grundplanung starten',
+        description:
+          '✔️ Motto wählen<br> ✔️ Gästeliste festlegen<br>✔️ Ort der Feier bestimmen<br>✔️ Einladungen gestalten & verschicken',
+      },
+      {
+        title: '2 Wochen vorher 🛒 Spiele & Deko organisieren',
+        description:
+          '✔️ Spiele & Aktivitäten planen<br>✔️ Deko & Mitgebsel besorgen<br>✔️ Musik & Playlists vorbereiten<br>✔️ Falls nötig: Kuchen oder Snacks bestellen',
+      },
+      {
+        title: '1 Woche vorher 🍰 Feinschliff',
+        description:
+          '✔️ Lebensmittel & Getränke einkaufen<br>✔️ Bastel- & Spielezubehör vorbereiten<br>✔️ Kamera oder Handy für Fotos bereithalten<br>✔️ Falls nötig: Helfer oder zusätzliche Betreuung organisieren',
+      },
+      {
+        title: '1 Tag vorher 🎈 Letzte Vorbereitungen',
+        description:
+          '✔️ Raum oder Garten dekorieren<br>✔️ Geschenke einpacken<br>✔️ Spiele & Stationen aufbauen<br>✔️ Torte oder Muffins backen',
+      },
+    ]}
+  >
+  </Features2>
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    id="faq"
+    title="Die wichtigsten Fragen für den vierten Geburtstag"
+    items={[
+      {
+        title: 'Wie lange sollte der Geburtstag dauern? 🎉',
+        description:
+          'Für 4-Jährige ist eine Dauer von 1,5 bis 3 Stunden ideal, da sie sich noch nicht lange konzentrieren können und schnell müde werden. Plane eine kleine Pause mit Snacks ein, um die Kinder zwischendurch zu entspannen. 😊',
+        icon: 'tabler:chevrons-right',
+        },
+      {
+        title: 'Wie viele Kinder sollte ich einladen? 🎈',
+        description: `Eine gute Faustregel lautet: Alter des Kindes + 1, also etwa 5 Gäste für einen 4. Geburtstag. So bleibt die Gruppe überschaubar, und es wird nicht zu laut oder chaotisch. 😊! `,
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Was sind gute Gastgeschenke? 🎁',
+        description:
+          'Kleine Malbücher, Sticker, Seifenblasen oder selbstgemachte Kekse sind tolle Mitgebsel für 4-Jährige. Auch kleine Spielzeuge wie Flummis oder Tierfiguren kommen gut an – am besten etwas, das zum Motto der Party passt! 🎨🫧🍪',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Welche Uhrzeit ist ideal für den Kindergeburtstag? ⏰',
+        description: `Für 4-Jährige ist eine Startzeit zwischen 14:00 und 15:00 Uhr ideal, da sie dann ausgeruht sind und genug Zeit zum Spielen haben. Falls dein Kind noch Mittagsschlaf macht, plane die Feier besser ab 15:30 Uhr, um Übermüdung zu vermeiden. 😊`,
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Mit oder ohne Eltern feiern? 👨‍👩‍👧‍👦',
+        description: `Bei 4-Jährigen ist es üblich, dass einige Eltern dabeibleiben, vor allem, wenn die Kinder noch unsicher sind oder nicht oft alleine woanders waren. Eine gute Lösung: Eltern können die ersten 30 Minuten bleiben und dann gehen, wenn sich die Kinder wohlfühlen. Alternativ kannst du in der Einladung erwähnen, ob die Eltern eingeladen sind oder nur zum Abholen kommen sollen. 😊`,
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Muss man den 4. Geburtstag schon groß feiern? 🎂',
+        description: `Nein, es gibt keinen Zwang! 😊 Manche Kinder freuen sich riesig auf eine Party mit Freunden, andere sind noch zu schüchtern oder schnell überfordert. Eine kleine Feier mit der Familie oder ein Ausflug (z. B. in den Zoo oder auf einen Spielplatz) kann genauso schön sein. Wichtig ist, dass sich das Geburtstagskind wohlfühlt! 🎈✨`,
+        icon: 'tabler:chevrons-right',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-yellow-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
+
 </Layout>
