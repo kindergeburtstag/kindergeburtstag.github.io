@@ -8,6 +8,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Content from '~/components/widgets/ContentColorBG.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Features2 from '~/components/widgets/Features2.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
 
 import kindergeburtstagBild from '../../assets/images/kindergeburtstag-ideen-4-jahre.jpg';
 import kindergeburtstagvierjahrespieleideen from '../../assets/images/kindergeburtstag-4-jahre-spiele-ideen.jpg';
@@ -118,6 +119,15 @@ image={{
     Plane eine unvergessliche <span class="font-semibold">Kinderparty</span>mit kreativen Mottos, lustigen Spielen & cleveren Planungstipps! 🎈</span
   > <br>
   Der 4. Geburtstag ist ein aufregendes Event! In diesem Alter haben Kinder oft ihre ersten besten Freunde und lieben fantasievolle Spielwelten.
+  <ul>
+    <li><b><a href="#mottos">✓ Die besten Mottos für den vierten Geburtstag</a></b></li>
+    <li><b><a href="#einladungskarten">✓ Einladungskarten zum 4. Geburtstag</a></b></li>
+    <li><b><a href="#wie-lange">✓ 4. Kindergeburtstag - Wie lange? & Wie viele?</a></b></li>
+    <li><b><a href="#spielideen">✓ Spielideen für den 4. Geburtstag</a></b></li>
+    <li><b><a href="#deko">✓ Deko für den 4. Geburtstag</a></b></li>
+    <li><b><a href="#essen">✓ Essen & Kuchen zum 4. Geburtstag</a></b></li>
+    <li><b><a href="#checkliste">✓ Checkliste für den 4. Geburtstag</a></b></li>
+  </ul><br>
 </Fragment>
 </Hero2>
 
@@ -125,46 +135,85 @@ image={{
 
 <Features
 id="mottos"
-title="🎭 Die besten Mottos für den 4. Geburtstag"
-subtitle="Each of the following features enhances AstroWind's value proposition."
+title="🎭 Die besten Motto Ideen für den 4. Geburtstag"
+subtitle="Hier fügen wir doch lieber die Ebene oben drüber ein: also zb . Klassiker und zeitlose Themen"
 columns={2}
 items={[
   {
     title: 'Dinosaurier-Party',
     description:
-      'Eine Dino-Party ist perfekt für neugierige 4-Jährige, die Dinosaurier lieben! Mit Dino-Fußspuren auf dem Boden, einer Schatzsuche nach Dino-Eiern und lustigen Fossilien-Bastelideen wird der Geburtstag zu einem unvergesslichen Abenteuer. 🦖🎈',
+      'Eine Dino-Party ist perfekt für neugierige 4-Jährige, die Dinosaurier lieben! Mit Dino-Fußspuren auf dem Boden, einer Schatzsuche nach Dino-Eiern und lustigen Fossilien-Bastelideen wird der Geburtstag zu einem unvergesslichen Abenteuer. 🦖🎈 <br><br><b><a href="#indoor-spiele">Mehr Infos zur Dinosaurier Party</a></b>',
     icon: 'tabler:brand-deno',
   },
   {
     title: 'Paw Patrol-Party',
-    description: `Mit Chase, Marshall & Co. auf einer Mission! Kinder können Hindernis-Parcours bewältigen, versteckte “Rettungsmissionen” erfüllen und sich als ihre Lieblingsfigur verkleiden. Perfekt für aktive 4-Jährige! 🚒🐾`,
+    description: `Mit Chase, Marshall & Co. auf einer Mission! Kinder können Hindernis-Parcours bewältigen, versteckte “Rettungsmissionen” erfüllen und sich als ihre Lieblingsfigur verkleiden. Perfekt für aktive 4-Jährige! 🚒🐾<br><br><b><a href="#indoor-spiele">Mehr Infos zur Paw Patrol Party</a></b>`,
     icon: 'tabler:dog',
   },
   {
     title: 'Bauernhof-Party',
     description:
-      'Ein liebevoll dekorierter “Bauernhof” mit Tierstimmen-Ratespielen, Schubkarrenrennen und einer Mini-“Streichelwiese” macht den Geburtstag zum Erlebnis. Ideal für Kinder, die Tiere und Natur lieben! 🐷🐥',
+      'Ein liebevoll dekorierter “Bauernhof” mit Tierstimmen-Ratespielen, Schubkarrenrennen und einer Mini-“Streichelwiese” macht den Geburtstag zum Erlebnis. Ideal für Kinder, die Tiere und Natur lieben! 🐷🐥<br><br><b><a href="#indoor-spiele">Mehr Infos zur Bauernhof Party</a></b>',
     icon: 'tabler:building-cottage',
   },
   {
     title: 'Prinzessinnen & Ritter-Party',
-    description: `Kleine Prinzessinnen und Ritter können eigene Kronen & Schwerter basteln, durch ein “Ritterturnier” laufen und an einem königlichen Festmahl teilnehmen. Perfekt für fantasievolle 4-Jährige! 🏰✨`,
+    description: `Kleine Prinzessinnen und Ritter können eigene Kronen & Schwerter basteln, durch ein “Ritterturnier” laufen und an einem königlichen Festmahl teilnehmen. Perfekt für fantasievolle 4-Jährige! 🏰✨<br><br><b><a href="#indoor-spiele">Mehr Infos zur Prinzessinnen Party</a></b>`,
     icon: 'tabler:crown',
   },
   {
     title: 'Superhelden-Party',
-    description: `Mit individuellen Superhelden-Umhängen, einem Hindernisparcours für geheime Missionen und lustigen “Superkräfte”-Spielen werden die Kids zu echten Helden! Perfekt für energiegeladene Geburtstagskinder. 💥🦸‍♂️`,
+    description: `Mit individuellen Superhelden-Umhängen, einem Hindernisparcours für geheime Missionen und lustigen “Superkräfte”-Spielen werden die Kids zu echten Helden! Perfekt für energiegeladene Geburtstagskinder. 💥🦸‍♂️<br><br><b><a href="#indoor-spiele">Mehr Infos zur Superhelden Party</a></b>`,
     icon: 'tabler:helicopter',
   },
   {
     title: 'Kreativ- & Bastelparty',
-    description: `Perfekt für kreative 4-Jährige! Mit Malen, Basteln und Kneten können die Kinder ihre Fantasie ausleben. Eine DIY-Station mit Farben, Glitzer und Stickern sorgt für viel Spaß – und am Ende kann jedes Kind sein eigenes Kunstwerk mit nach Hause nehmen! 🖌️🎭✨`,
+    description: `Perfekt für kreative 4-Jährige! Mit Malen, Basteln und Kneten können die Kinder ihre Fantasie ausleben. Eine DIY-Station mit Farben, Glitzer und Stickern sorgt für viel Spaß – und am Ende kann jedes Kind sein eigenes Kunstwerk mit nach Hause nehmen! 🖌️🎭✨<br><br><b><a href="#indoor-spiele">Mehr Infos zur Kreativ Party</a></b>`,
     icon: 'tabler:palette',
   },
-]}
-/>
+]}  
+>
+<div>hallo</div>
+</Features>
+
 
 <!-- Content Widget **************** -->
+
+<Content
+
+id="spiele"
+class="bg-yellow-50 p-8 rounded-lg"
+items={[
+  {
+    title: '🏡 1. Indoor-Spiele – Perfekt für Zuhause',
+    description:
+      'Wenn das Wetter nicht mitspielt, gibt es viele lustige Spiele, die drinnen für Spaß sorgen – von Bewegungsspielen wie Luftballon-Tanz bis zu kreativen Bastelideen für kleine Künstler. 🎈🎨 <br><b><a href="#indoor-spiele">Mehr Infos zu den Indoor Spielen</a></b>',
+  },
+  {
+    title: '🌳 2. Outdoor-Spiele – Toben & Spaß im Freien',
+    description:
+      'Frische Luft und Bewegung machen den Kindergeburtstag noch aufregender – von einer spannenden Schatzsuche im Garten bis hin zu lustigen Hindernis-Parcours gibt es viele tolle Spielideen für draußen. 🌞🏃‍♂️<br><b><a href="#outdoor-spiele">Mehr Infos zu den Outdoor Spielen</a></b>',
+  },
+  {
+    title: '🎨 3. Kreativ- & Bastelspiele – Ruhige Alternativen',
+    description:
+      'Perfekt für kleine Künstler: Ob Malen mit Fingerfarben, Masken basteln oder selbstgemachte Instrumente gestalten – hier können die Kinder ihrer Fantasie freien Lauf lassen und tolle Erinnerungen mit nach Hause nehmen. 🎭✨<br><b><a href="#kreative-spiele">Mehr Infos zu den kreativen Spielen</a></b>',
+  },
+  {
+    title: '🤹 4. Lustige Bewegungsspiele – Energie abbauen!',
+    description: 'Für aktive 4-Jährige sind Bewegungsspiele perfekt – ob Froschhüpfen, das spannende Ampelspiel oder ein lustiger Affentanz, hier können sich die Kinder richtig austoben und gemeinsam Spaß haben. 🏃‍♂️🎈<br><b><a href="#lustige-spiele">Mehr Infos zu den lustigen Spielen</a></b>',
+  },
+]}
+image={{
+  src: kindergeburtstagvierjahrespieleideen,
+  alt: 'Colorful Image',
+}}
+>
+<Fragment slot="content">
+  <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Spiele für den 4. Geburtstag <br> Großer Spaß für kleine Entdecker!</h2>
+</div>
+</Fragment>
+</Content>
 
 <Content
 
@@ -203,6 +252,8 @@ image={{
 </Fragment>
 </Content>
 
+  
+
 
 
   <!-- Features2 Widget ************** -->
@@ -236,11 +287,35 @@ image={{
   >
   </Features2>
 
+  <ContactUs
+  id="form"
+  title="Jetzt kostenlose PDF Checkliste downloaden!"
+  subtitle="Downloade dir jetzt die kostenlose PDF Checkliste mit allen Steps für einen entspannten und schönen 4. Geburtstag"
+  inputs={[
+    {
+      type: 'text',
+      name: 'name',
+      label: 'Name',
+    },
+    {
+      type: 'email',
+      name: 'email',
+      label: 'Email',
+    },
+  ]}
+  disclaimer={{
+    label:
+      'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+  }}
+  description=""
+/>
+
+
   <!-- FAQs Widget ******************* -->
 
   <FAQs
     id="faq"
-    title="Die wichtigsten Fragen für den vierten Geburtstag"
+    title="Zusammengefasst die wichtigsten Fragen für den vierten Geburtstag"
     items={[
       {
         title: 'Wie lange sollte der Geburtstag dauern? 🎉',
