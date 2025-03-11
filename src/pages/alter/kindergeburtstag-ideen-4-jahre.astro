@@ -8,6 +8,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Content from '~/components/widgets/ContentColorBG.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Features2 from '~/components/widgets/Features2.astro';
+import Features4 from '~/components/widgets/Features4.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
 
 import kindergeburtstagBild from '../../assets/images/kindergeburtstag-ideen-4-jahre.jpg';
@@ -116,7 +117,7 @@ image={{
 
 <Fragment slot="subtitle">
   <span class="hidden sm:inline">
-    Plane eine unvergessliche <span class="font-semibold">Kinderparty</span>mit kreativen Mottos, lustigen Spielen & cleveren Planungstipps! 🎈</span
+    Plane eine unvergessliche <span class="font-semibold">Kinderparty</span> mit kreativen Mottos, lustigen Spielen & cleveren Planungstipps! 🎈</span
   > <br>
   Der 4. Geburtstag ist ein aufregendes Event! In diesem Alter haben Kinder oft ihre ersten besten Freunde und lieben fantasievolle Spielwelten.
   <ul>
@@ -127,7 +128,7 @@ image={{
     <li><b><a href="#geschenke">✓ Geschenkideen für den 4. Kindergeburtstag</a></b></li>
     <li><b><a href="#eltern">✓ 4. Kindergeburtstag - Mit oder ohne Eltern?</a></b></li>
     <li><b><a href="#planung">✓ Planung des 4. Kindergeburtstag</a></b></li>
-    <li><b><a href="#einladungskarten">✓ Einladungskarten zum 4. Geburtstag</a></b></li>
+    <li><b><a href="#einladungskarte">✓ Einladungskarten zum 4. Geburtstag</a></b></li>
     <li><b><a href="#deko">✓ Deko für den 4. Geburtstag</a></b></li>
     <li><b><a href="#essen">✓ Essen & Kuchen zum 4. Geburtstag</a></b></li>
     <li><b><a href="#checkliste">✓ Checkliste für den 4. Geburtstag</a></b></li>
@@ -139,6 +140,7 @@ image={{
 
 <Features
 id="mottos"
+bg="bg-blue-50"
 title="🎭 Die besten Motto Ideen für den 4. Geburtstag"
 subtitle="Hier fügen wir doch lieber die Ebene oben drüber ein: also zb . Klassiker und zeitlose Themen"
 columns={2}
@@ -264,6 +266,7 @@ image={{
 id="spielideen"
 title="Spiele für den 4. Geburtstag"
 subtitle="Großer Spaß für kleine Entdecker!"
+bg="bg-red-50"
 columns={2}
 items={[
   {
@@ -381,6 +384,7 @@ image={{
 
   <Features2
     id="planung"
+    bg="bg-green-50"
     title="Stressfreie Planung des 4. Geburtstages 📅"
     subtitle="Mit einer guten Vorbereitung wird der Geburtstag entspannt und unvergesslich! Hier ist eine Schritt-für-Schritt-Checkliste, damit du nichts vergisst:"
     items={[
@@ -408,8 +412,111 @@ image={{
   >
   </Features2>
 
+  <!-- Einladungskarte **************** -->
+
+<Content
+
+id="einladungskarte"
+class="bg-yellow-50 p-8 rounded-lg"
+isReversed
+items={[
+  {
+    title: '📌 Was gehört in eine perfekte Einladung?',
+    description:
+      '<ul><li>📅 <b>Datum & Uhrzeit:</b> Wann startet und endet die Feier?</li><li>📍 <b>Ort:</b> Adresse der Feier (zuhause, Spielplatz, Indoor-Halle).</li><li>🎭 <b>Motto:</b> Falls die Feier ein Motto hat (z. B. Dino, Prinzessin, Piraten).</li>  <li>🍰 <b>Verpflegung:</b> Gibt es Kuchen, Snacks oder Mittagessen?</li> <li>📞 <b>Rückmeldung:</b> Bitte um Zusage oder Absage mit Telefonnummer.</li>  <li>👨‍👩‍👧 <b>Mit oder ohne Eltern?</b> Sollen die Eltern bleiben oder nur bringen & abholen?</li></ul>',
+  },
+  {
+    title: '📌 Einladungskarten selber basteln oder kaufen?',
+    description:
+      '<ul><li>🎨 **DIY Einladungskarten:** Selbst gestalten mit Fingerfarben, Glitzer oder Aufklebern – eine tolle Bastelaktivität mit dem Geburtstagskind!</li><li>🖨️ **Online-Vorlagen & Druck:** Es gibt viele kostenlose Vorlagen zum Ausdrucken.</li>  <li>📱 **Digitale Einladungen:** WhatsApp, E-Mail oder Online-Karten – praktisch & schnell!</li></ul>',
+  },
+  {
+    title: '💡 Tipp:',
+    description:
+      'Einladungskarten etwa <b>2-3 Wochen vorher</b> verteilen, damit die Gäste genug Zeit zum Planen haben! <br><br><b><a href="#einladungskarte">🚀 Brauchst du eine Vorlage für Einladungstexte? 😊</a></b> ',
+  },
+
+
+]}
+image={{
+  src: kindergeburtstagvierjahrespieleideen,
+  alt: 'Colorful Image',
+}}
+>
+<Fragment slot="content">
+  <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Einladungskarten zum 4. Geburtstag 🔖</h2>
+  <p>Die Einladungskarte ist der erste Eindruck der Party und gibt den kleinen Gästen & Eltern alle wichtigen Infos.<br>
+  </p>
+</div>
+</Fragment>
+</Content>
+
+
+<!-- DEKO **************** -->
+
+<Content
+
+id="deko"
+items={[
+  {
+    title: '📌 Grundelemente für eine perfekte Party-Deko:',
+    description:
+      '<ul><li>🎨 <b>Farben & Motto:</b> Wähle 2–3 Hauptfarben passend zum Thema (z. B. Blau & Grün für eine Dino-Party oder Pink & Gold für eine Prinzessinnen-Feier).</li><li>🎈 <b>Luftballons & Girlanden:</b> Ein Muss für jede Feier – gerne mit Zahlen-Ballons oder Figuren passend zum Motto.</li><li>🍽️ <b>Tischdeko:</b> Bunte Teller, Servietten & Becher passend zum Party-Motto oder mit personalisierten Namenskarten.</li><li>🖼️ <b>Wanddeko:</b> Banner, Poster oder DIY-Dekoration mit Bastelpapier & Lichterketten.</li><li>🎊 <b>Party-Eingang:</b> Begrüße die Gäste mit einem Luftballonbogen oder einer Willkommens-Tafel!</li></ul>',
+  },
+  {
+    title: '📌 DIY-Deko-Ideen zum Selbermachen:',
+    description:
+      '<ul><li>✂️ **Girlanden & Wimpelketten:** Bastelspaß mit dem Geburtstagskind – einfach aus buntem Papier & Schnur gestalten.</li><li>🎭 **Masken & Hüte:** Passend zum Motto können die Kinder eigene Partyhüte oder Masken basteln.</li><li>🕯️ **Leuchtende Highlights:** LED-Lichterketten oder Gläser mit leuchtenden Knicklichtern zaubern eine magische Stimmung.</li></ul>',
+      },
+  {
+    title: '💡 Tipp:',
+    description:
+      'Falls du wenig Zeit hast, gibt es fertige Deko-Sets passend zu jedem Motto online oder im Handel! 🎉',
+  },
+
+]}
+image={{
+  src: kindergeburtstagvierjahrespieleideen,
+  alt: 'Colorful Image',
+}}
+>
+<Fragment slot="content">
+  <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">🎈 Deko für den 4. Geburtstag – So wird die Feier zum Hingucker! 🎨</h2>
+  <p>Die richtige Dekoration schafft eine besondere Atmosphäre und macht den Kindergeburtstag unvergesslich. Mit Farben, Luftballons und passenden Details wird jeder Raum zur Partylocation!
+  </p>
+</div>
+</Fragment>
+</Content>
+
+<Features2
+    id="essen"
+    bg="bg-cyan-50"
+    title="🍰 Die besten Gerichte, Snacks & Kuchen für den 4. Geburtstag 🎂"
+    columns={3}
+    subtitle="Ein leckerer Geburtstagskuchen, einfache Snacks und kindgerechte Speisen sorgen für zufriedene kleine Gäste. Hier sind die besten Ideen für eine stressfreie und leckere Verpflegung!"
+    items={[
+      {
+        title: '🎂 Die beliebtesten Geburtstagskuchen:',
+        description:
+          '<ul><li>🍓 <b>Obstkuchen oder Erdbeer-Torte:</b> Fruchtig, leicht & beliebt bei Kindern.</li><li>🍫 <b>Schokokuchen oder Brownies:</b> Klassiker, der immer gut ankommt!</li><li>🦸 <b>Motto-Torte:</b> Mit Figuren oder essbaren Aufdrucken passend zum Party-Thema.</li><li>🧁 <b>Muffins & Donuts:</b> Perfekt für kleine Hände & weniger Chaos als mit großen Torten.</li><li>🎂 <b>Regenbogen-Kuchen:</b> Mit bunten Schichten aus Lebensmittelfarbe – ein Hingucker!</li></ul>',
+      },
+      {
+        title: '🥪 Einfache & schnelle Snacks:',
+        description:
+          '<ul><li>🥕 <b>Gemüse-Sticks mit Dip:</b> Gesund & lecker – Karotten, Gurken & Paprika mit Kräuterquark.</li><li>🍕 <b>Mini-Pizzen:</b> Entweder selbst belegen oder aus Blätterteig gebacken.</li><li>🧀 <b>Käse- & Trauben-Spieße:</b> Einfach, aber ein echter Partyhit!</li><li>🍞 <b>Bunte Sandwiches:</b> In Stern-, Herz- oder Tierform ausgestochen.</li><li>🌭 <b>Würstchen im Schlafrock:</b> Würstchen in Blätterteig eingebacken – immer beliebt.</li></ul>',
+      },
+      {
+        title: '🍹 Getränke für Kinder:',
+        description:
+          '<ul><li>🍎 <b>Fruchtschorlen:</b> Apfelschorle oder Orangensaft mit Wasser verdünnt.</li><li>🍓 <b>Selbstgemachte Limonade:</b> Mit Beeren, Minze & Zitrone.</li><li>🥛 <b>Bunte Milchshakes:</b> Erdbeer-, Bananen- oder Kakao-Milchshake als gesunde Alternative.</li></ul>',
+      },
+    ]}
+  >
+  </Features2>
+
+
   <ContactUs
-  id="form"
+  id="checkliste"
   title="Jetzt kostenlose PDF Checkliste downloaden!"
   subtitle="Downloade dir jetzt die kostenlose PDF Checkliste mit allen Steps für einen entspannten und schönen 4. Geburtstag"
   inputs={[
