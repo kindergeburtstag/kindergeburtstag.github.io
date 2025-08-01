@@ -11,15 +11,15 @@ export const headerData = {
         },
         {
           text: '5 Jahre',
-          href: getPermalink('/homes/startup'),
+          href: getPermalink('/alter/kindergeburtstag-ideen-5-jahre'),
         },
         {
           text: '6 Jahre',
-          href: getPermalink('/homes/mobile-app'),
+          href: getPermalink('/alter/kindergeburtstag-ideen-6-jahre'),
         },
         {
           text: '7 Jahre',
-          href: getPermalink('/homes/personal'),
+          href: getPermalink('/alter/kindergeburtstag-ideen-7-jahre'),
         },
       ],
     },
@@ -135,12 +135,9 @@ export const headerData = {
         },
       ],
     },
-    {
-      text: 'Widgets',
-      href: '#',
-    },
+
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'KI Schnitzeljagd', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {
@@ -198,7 +195,6 @@ export const footerData = {
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
   footNote: `

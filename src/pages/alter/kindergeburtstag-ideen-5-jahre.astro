@@ -1,0 +1,585 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+
+
+import Features from '~/components/widgets/Features.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Content from '~/components/widgets/ContentColorBG.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Features4 from '~/components/widgets/Features4.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
+
+import kindergeburtstagBild from '../../assets/images/kindergeburtstag-ideen-4-jahre.jpg';
+import kindergeburtstagvierjahrespieleideen from '../../assets/images/kindergeburtstag-4-jahre-spiele-ideen.jpg';
+const metadata = {
+  title: "🎂 Kindergeburtstag Ideen für 4-Jährige – Spiele, Mottos & Planung!",
+  description: "Die besten Kindergeburtstag Ideen für 4-Jährige 🎁. Mottos, Spiele, Checklisten & Planungstipps für eine stressfreie und fröhliche Feier!",
+  keywords: "Kindergeburtstag Ideen für 4-Jährige, Geburtstag für Kleinkinder, Mottoparty Kinder, Spiele für 4-Jährige, Kindergeburtstag zuhause",
+  canonical: "https://kindergeburtstag.github.io//kindergeburtstag-ideen-4-jahre",
+};
+---
+<Layout metadata={metadata}>
+ <!-- schema.org ******************* -->
+
+ <script type="application/ld+json">
+  {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Kindergeburtstag Ideen für 5-Jährige – Spiele, Mottos & Planung!",
+      "description": "Finde die besten Kindergeburtstag Ideen für 4-Jährige: Mottos, Spiele, Checklisten & Planungstipps für eine stressfreie und fröhliche Feier!",
+      "author": {
+        "@type": "Person",
+        "name": "Marco Czerny"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kindergeburtstag-Ideen",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://deine-website.com/logo.png"
+        }
+      },
+      {
+               "@type": "Question",
+               "name": "Welche Spiele sind für 4-Jährige geeignet?",
+               "acceptedAnswer": {
+                   "@type": "Answer",
+                   "text": "Spiele wie Stopptanz, Schatzsuche, Luftballontanz oder Kinderschminken sind perfekt für einen Kindergeburtstag mit 4-Jährigen."
+               }
+           },
+           {
+               "@type": "Question",
+               "name": "Wie lange sollte der Geburtstag dauern?",
+               "acceptedAnswer": {
+                   "@type": "Answer",
+                   "text": "Für 4-jährige Kinder sind 1,5 bis 3 Stunden ideal, da sie sich noch nicht lange konzentrieren können."
+               }
+           },
+      {
+               "@type": "Question",
+               "name": "Wie viele Kinder sollte ich einladen?",
+               "acceptedAnswer": {
+                   "@type": "Answer",
+                   "text": "Faustregel: Alter des Kindes + 1 = Maximal 5 Gäste für eine entspannte Kindergeburtstagsfeier."
+               }
+           },
+      "datePublished": "2025-02-27",
+      "mainEntityOfPage": "https://kindergeburtstag.github.io/alter/kindergeburtstag-ideen-4-jahre"
+    }
+  `}
+</script>
+
+<!-- menü ******************* -->
+
+<Fragment slot="announcement"></Fragment>
+<Fragment slot="header">
+<Header
+  position="left"
+  links={[
+    { text: 'Mottos', href: '#mottos' },
+    { text: 'Spiele', href: '#spiele' },
+    { text: 'Planung', href: '#planung' },
+    { text: 'FAQ', href: '#faq' },
+  ]}
+  actions={[
+    {
+      text: 'KI Schnitzeljagd',
+      href: '#form',
+    },
+  ]}
+  isSticky
+  showToggleTheme
+/>
+</Fragment>
+
+
+<!-- Hero ******************* -->
+
+<Hero2
+tagline="Spiele, Mottos & Planung"
+actions={[
+  { variant: 'primary', target: '_blank', text: 'Die besten Spiele', href: 'https://github.com/onwidget/astrowind' },
+  { text: 'Angesagte Mottos', href: '#mottos' },
+]}
+image={{
+  src: kindergeburtstagBild,
+  alt: 'AstroWind Hero Image',
+}}
+>
+<Fragment slot="title">
+  Kindergeburtstag Ideen <span class="text-accent dark:text-white highlight"
+    >für 5-Jährige</span
+  > <br />
+</Fragment>
+
+<Fragment slot="subtitle">
+  <span class="hidden sm:inline">
+    Plane eine unvergessliche <span class="font-semibold">Kinderparty</span> mit kreativen Mottos, lustigen Spielen & cleveren Planungstipps! 🎈</span
+  > <br>
+  Der 5. Geburtstag ist ein aufregendes Event! In diesem Alter haben Kinder oft ihre ersten besten Freunde und lieben fantasievolle Spielwelten.
+  <ul>
+    <li><b><a href="#mottos">✓ Die besten Mottos für den vierten Geburtstag</a></b></li>
+    <li><b><a href="#dauer">✓ Wie lange sollte ein vierter Kindergeburtstag dauern?</a></b></li>
+    <li><b><a href="#wie-viele">✓ 4. Kindergeburtstag - Mit wie vielen Kinder?</a></b></li>
+    <li><b><a href="#spielideen">✓ Spielideen für den 4. Geburtstag</a></b></li>
+    <li><b><a href="#geschenke">✓ Geschenkideen für den 4. Kindergeburtstag</a></b></li>
+    <li><b><a href="#eltern">✓ 4. Kindergeburtstag - Mit oder ohne Eltern?</a></b></li>
+    <li><b><a href="#planung">✓ Planung des 4. Kindergeburtstag</a></b></li>
+    <li><b><a href="#einladungskarte">✓ Einladungskarten zum 4. Geburtstag</a></b></li>
+    <li><b><a href="#deko">✓ Deko für den 4. Geburtstag</a></b></li>
+    <li><b><a href="#essen">✓ Essen & Kuchen zum 4. Geburtstag</a></b></li>
+    <li><b><a href="#checkliste">✓ Checkliste für den 4. Geburtstag</a></b></li>
+  </ul><br>
+</Fragment>
+</Hero2>
+
+<!-- Mottos *************** -->
+
+<Features
+id="mottos"
+bg="bg-lime-50 dark:bg-transparent"
+title="🎭 Die besten Motto Ideen für den 4. Geburtstag"
+subtitle="Hier fügen wir doch lieber die Ebene oben drüber ein: also zb . Klassiker und zeitlose Themen"
+columns={2}
+items={[
+  {
+    title: 'Dinosaurier-Party',
+    description:
+      'Eine Dino-Party ist perfekt für neugierige 4-Jährige, die Dinosaurier lieben! Mit Dino-Fußspuren auf dem Boden, einer Schatzsuche nach Dino-Eiern und lustigen Fossilien-Bastelideen wird der Geburtstag zu einem unvergesslichen Abenteuer. 🦖🎈 <br><br><b><a href="#indoor-spiele">Mehr Infos zur Dinosaurier Party</a></b>',
+    icon: 'tabler:brand-deno',
+  },
+  {
+    title: 'Paw Patrol-Party',
+    description: `Mit Chase, Marshall & Co. auf einer Mission! Kinder können Hindernis-Parcours bewältigen, versteckte “Rettungsmissionen” erfüllen und sich als ihre Lieblingsfigur verkleiden. Perfekt für aktive 4-Jährige! 🚒🐾<br><br><b><a href="#indoor-spiele">Mehr Infos zur Paw Patrol Party</a></b>`,
+    icon: 'tabler:dog',
+  },
+  {
+    title: 'Bauernhof-Party',
+    description:
+      'Ein liebevoll dekorierter “Bauernhof” mit Tierstimmen-Ratespielen, Schubkarrenrennen und einer Mini-“Streichelwiese” macht den Geburtstag zum Erlebnis. Ideal für Kinder, die Tiere und Natur lieben! 🐷🐥<br><br><b><a href="#indoor-spiele">Mehr Infos zur Bauernhof Party</a></b>',
+    icon: 'tabler:building-cottage',
+  },
+  {
+    title: 'Prinzessinnen & Ritter-Party',
+    description: `Kleine Prinzessinnen und Ritter können eigene Kronen & Schwerter basteln, durch ein “Ritterturnier” laufen und an einem königlichen Festmahl teilnehmen. Perfekt für fantasievolle 4-Jährige! 🏰✨<br><br><b><a href="#indoor-spiele">Mehr Infos zur Prinzessinnen Party</a></b>`,
+    icon: 'tabler:crown',
+  },
+  {
+    title: 'Superhelden-Party',
+    description: `Mit individuellen Superhelden-Umhängen, einem Hindernisparcours für geheime Missionen und lustigen “Superkräfte”-Spielen werden die Kids zu echten Helden! Perfekt für energiegeladene Geburtstagskinder. 💥🦸‍♂️<br><br><b><a href="#indoor-spiele">Mehr Infos zur Superhelden Party</a></b>`,
+    icon: 'tabler:helicopter',
+  },
+  {
+    title: 'Kreativ- & Bastelparty',
+    description: `Perfekt für kreative 4-Jährige! Mit Malen, Basteln und Kneten können die Kinder ihre Fantasie ausleben. Eine DIY-Station mit Farben, Glitzer und Stickern sorgt für viel Spaß – und am Ende kann jedes Kind sein eigenes Kunstwerk mit nach Hause nehmen! 🖌️🎭✨<br><br><b><a href="#indoor-spiele">Mehr Infos zur Kreativ Party</a></b>`,
+    icon: 'tabler:palette',
+  },
+]}  
+>
+</Features>
+
+<!-- DAUER **************** -->
+
+<Content
+
+id="dauer"
+class="bg-yellow-50 p-8 rounded-lg"
+isReversed
+items={[
+  {
+    title: '🔹 Ablauf & Zeitplanung für einen stressfreien Kindergeburtstag',
+    description:
+      'Hier eine empfohlene Zeiteinteilung, damit die Kinder sich nicht langweilen oder überfordert werden:<br><br><b>🎈 Beispiel-Zeitplan für eine 2-stündige Feier:</b><br>✅ 15:00 – 15:15 Uhr: Ankommen & freies Spielen<br>✅ 15:15 – 15:45 Uhr: Erstes Spiel (z. B. Bewegungsspiel wie Stopptanz)<br>✅ 15:45 – 16:00 Uhr: Geburtstagskuchen essen & kurze Trinkpause<br>✅ 16:00 – 16:30 Uhr: Zweite Aktivität (Bastelstation oder weiteres Spiel)<br>✅ 16:30 – 16:45 Uhr: Geschenke auspacken <br>✅ 16:45 – 17:00 Uhr: Abschiedsspiel & Verabschiedung<br>',
+  },
+  {
+    title: '🎯 Warum sind Pausen so wichtig?',
+    description:
+      'Kleine Kinder brauchen zwischendurch Ruhepausen, um nicht überfordert zu sein.💡 Tipp: Setze dich mit deinem Kind hin und überlege gemeinsam, was es sich wünscht – manche Kinder lieben Action, andere mögen eher ruhige Bastelaktivitäten.</b>',
+  },
+  {
+    title: '❌ Was ist zu vermeiden?',
+    description:
+      '❌ Zu lange Partys (4+ Stunden) → Die Kinder sind irgendwann zu müde & quengelig.<br>❌ Dauerhafte Action ohne Pausen → Es ist wichtig, zwischendurch Zeit zum Essen oder für ruhigere Spiele einzuplanen.<br>❌ Zu viele Programmpunkte → Lieber 2-3 Highlights, als die Kinder mit zu vielen Aktivitäten zu überfordern.',
+  },
+]}
+image={{
+  src: kindergeburtstagvierjahrespieleideen,
+  alt: 'Colorful Image',
+}}
+>
+<Fragment slot="content">
+  <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Die ideale Dauer für einen 4. Geburtstag ⏳</h2>
+  <p>Kinder in diesem Alter haben noch eine begrenzte Aufmerksamkeitsspanne und sind nach einer gewissen Zeit schnell überfordert. Eine Dauer von 1,5 bis maximal 3 Stunden hat sich als ideal erwiesen.
+  </p>
+</div>
+</Fragment>
+</Content>
+
+
+
+
+
+
+<!-- Wie viele **************** -->
+
+<Content
+
+id="wie-viele"
+class="bg-yellow-50 p-8 rounded-lg"
+items={[
+  {
+    title: '🔹 Wichtige Faktoren bei der Gästeliste', 
+    description:
+      '✅ Wie groß ist dein Kind die Gruppe gewöhnt?<br>📌 Manche Kinder sind bereits in einer Kita-Gruppe mit vielen Freunden, andere spielen eher mit wenigen engen Freunden.<br><br>✅ Wie gut können die Kinder sich schon selbst beschäftigen?<br>📌 Mit 4 Jahren brauchen die meisten Kinder noch viel Anleitung von Erwachsenen. Eine kleinere Gruppe macht es für Eltern entspannter.<br><br>✅ Wie groß ist die Feierlocation?<br>📌 Eine Feier im Wohnzimmer oder der Küche braucht weniger Kinder als eine Feier draußen im Garten oder auf einem Spielplatz.<br><br>✅ Wie viele Helfer stehen zur Verfügung?<br>📌 Falls Eltern, Großeltern oder ältere Geschwister mithelfen, können es auch mal 1-2 Kinder mehr sein.',
+  },
+  {
+    title: '🛑 Was passiert, wenn es zu viele Kinder sind?',
+    description:
+      '❌ Die Kinder werden schnell überreizt → Lautstärke & Unruhe steigen<br>❌ Es wird schwieriger, alle Kinder zu beschäftigen → Besonders bei aufwändigen Spielen<br>❌ Es kann zu mehr Streit kommen → Je größer die Gruppe, desto höher das Risiko für kleine Konflikte<br><br>💡 <b>Tipp:</b> Falls dein Kind sich nicht entscheiden kann, kannst du einen Geburtstag in zwei Runden feiern:<br>•	Vormittags ein kleineres Treffen mit den engsten Freunden<br>•	Nachmittags eine zweite Feier mit Familie oder weiteren Freunden',
+  },
+]}
+image={{
+  src: kindergeburtstagvierjahrespieleideen,
+  alt: 'Colorful Image',
+}}
+>
+<Fragment slot="content">
+  <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">🎈 Wie viele Kinder sollte ich einladen?</h2>
+  <p>🔢 Die Faustregel: Alter des Kindes + 1<br>
+    Eine bewährte Richtlinie für Kindergeburtstage lautet:<br>
+    Alter des Kindes + 1 = Anzahl der Gäste<br><br>
+    <b>Das bedeutet:</b><br>
+    👦 4 Jahre + 1 = 5 Kinder (inklusive Geburtstagskind)<br>
+    Diese Regel hilft dabei, eine überschaubare Gruppengröße zu behalten, damit es nicht zu chaotisch oder zu laut wird.<br>
+  </p>
+</div>
+</Fragment>
+</Content>
+
+<!-- Spiele *************** -->
+
+<Features
+
+id="spielideen"
+title="Spiele für den 4. Geburtstag"
+subtitle="Großer Spaß für kleine Entdecker!"
+bg="bg-blue-50 dark:bg-transparent"
+columns={2}
+items={[
+  {
+    title: '🏡 1. Indoor-Spiele – Perfekt für Zuhause',
+    description:
+      'Wenn das Wetter nicht mitspielt, gibt es viele lustige Spiele, die drinnen für Spaß sorgen – von Bewegungsspielen wie Luftballon-Tanz bis zu kreativen Bastelideen für kleine Künstler. 🎈🎨 <br><b><a href="#indoor-spiele">Mehr Infos zu den Indoor Spielen</a></b>',
+  },
+  {
+    title: '🌳 2. Outdoor-Spiele – Toben & Spaß im Freien',
+    description:
+      'Frische Luft und Bewegung machen den Kindergeburtstag noch aufregender – von einer spannenden Schatzsuche im Garten bis hin zu lustigen Hindernis-Parcours gibt es viele tolle Spielideen für draußen. 🌞🏃‍♂️<br><b><a href="#outdoor-spiele">Mehr Infos zu den Outdoor Spielen</a></b>',
+  },
+  {
+    title: '🎨 3. Kreativ- & Bastelspiele – Ruhige Alternativen',
+    description:
+      'Perfekt für kleine Künstler: Ob Malen mit Fingerfarben, Masken basteln oder selbstgemachte Instrumente gestalten – hier können die Kinder ihrer Fantasie freien Lauf lassen und tolle Erinnerungen mit nach Hause nehmen. 🎭✨<br><b><a href="#kreative-spiele">Mehr Infos zu den kreativen Spielen</a></b>',
+  },
+  {
+    title: '🤹 4. Lustige Bewegungsspiele – Energie abbauen!',
+    description: 'Für aktive 4-Jährige sind Bewegungsspiele perfekt – ob Froschhüpfen, das spannende Ampelspiel oder ein lustiger Affentanz, hier können sich die Kinder richtig austoben und gemeinsam Spaß haben. 🏃‍♂️🎈<br><b><a href="#lustige-spiele">Mehr Infos zu den lustigen Spielen</a></b>',
+  },
+]}
+image={{
+  src: kindergeburtstagvierjahrespieleideen,
+  alt: 'Colorful Image',
+}}
+>
+<Fragment slot="content">
+  <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Spiele für den 4. Geburtstag <br> Großer Spaß für kleine Entdecker!</h2>
+</div>
+</Fragment>
+</Features>
+  
+
+<!-- GESCHENKE **************** -->
+
+<Content
+
+id="geschenke"
+class="bg-yellow-50 p-8 rounded-lg"
+isReversed
+items={[
+  {
+    title: '🔹 Beliebte Geschenke für 4-Jährige',
+    description:
+      '<b>✅ 🎨 Kreative Geschenke:</b><li>Malbücher & Wachsmalstifte – perfekt für kleine Künstler</li><li>Sticker-Bögen – besonders mit beliebten Figuren oder Tieren</li><li>Mini-Knete-Sets – fördert Kreativität und Feinmotorik</li><b>✅ 🫧 Lustige Mitmach-Geschenke:</b><li>Seifenblasen-Fläschchen – immer ein Highlight für Kinder</li><li>Springbälle oder Flummis – ideal zum Herumtoben</li><li>Kleine Windmühlen oder Pusteblumen – perfekt für draußen</li><b>✅ 🦊 Tier- & Figuren-Themen:</b><li>Mini-Tierfiguren (z. B. Schleichtiere, Safari-Tiere, Bauernhof-Tiere)</li><li>Kuscheltier-Schlüsselanhänger – besonders bei Motto-Partys wie “Dschungel” oder “Bauernhof”</li><b>✅ 🍪 Selbstgemachte Geschenke:</b><li>Kekse oder Muffins – am besten mit lustigen Formen (z. B. Dino-, Stern- oder Herzform)</li><li>DIY-Bastelsets – z. B. Holzfiguren zum Bemalen oder Perlenarmbänder zum Selbermachen</li><li>Kleine Fotos vom Geburtstag – eine schöne Erinnerung für die Eltern</li>',
+  },
+  {
+    title: '🎭 Gastgeschenke passend zum Motto der Party',
+    description:
+      '<li>Dino-Party: Kleine Dinosaurier-Figuren oder Dino-Tattoos</li><li>Prinzessinnen-Party: Glitzernde Haarspangen oder kleine Krönchen</li><li>Superhelden-Party: Masken zum Basteln oder Mini-Comic-Hefte</li><li>Paw Patrol-Party: Sticker oder kleine Hundepfoten-Abzeichen</li><li>Bauernhof-Party: Mini-Tiere oder Saatkugeln zum Pflanzen</li>',
+  },
+
+]}
+image={{
+  src: kindergeburtstagvierjahrespieleideen,
+  alt: 'Colorful Image',
+}}
+>
+<Fragment slot="content">
+  <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">🎁 Was sind gute Gastgeschenke?</h2>
+  <p>Gastgeschenke sind eine schöne Erinnerung an den Geburtstag und eine kleine Geste, um sich bei den Gästen zu bedanken. Sie müssen nicht teuer sein – kleine, kreative Mitgebsel kommen bei 4-Jährigen besonders gut an!
+  </p>
+</div>
+</Fragment>
+</Content>
+
+
+<!-- MIT ODER OHNE **************** -->
+
+<Content
+
+id="eltern"
+items={[
+  {
+    title: '✅ Wann sollten Eltern dabeibleiben?',
+    description:
+      '<ul><li>👶 <b>Kinder sind eher schüchtern oder ängstlich</b> → Falls das Geburtstagskind oder einige Gäste sich ohne Eltern unwohl fühlen.</li><li>👦 <b>Nicht alle Kinder kennen sich gut</b> → Eine Begleitung gibt Sicherheit.</li>  <li>🎡 <b>Die Feier findet an einem öffentlichen Ort statt</b> → Indoor-Spielplatz, Zoo oder Freizeitpark.</li>  <li>👥 <b>Große Gruppen mit vielen kleinen Kindern</b> → Mehr als 6 Kinder? Dann helfen ein paar Eltern als Aufsichtspersonen.</li></ul>',
+  },
+  {
+    title: '🚀 Wann können Eltern gehen?',
+    description:
+      '<ul><li>✅ <b>Eltern können die ersten 30 Minuten bleiben</b>, um den Kindern die Eingewöhnung zu erleichtern.</li><li>✅ <b>Danach nach Absprache gehen</b>, wenn sich die Kinder wohlfühlen.</li>  <li>✅ <b>In der Einladung klarstellen</b>, ob Eltern dabeibleiben oder nur zum Abholen kommen sollen.</li></ul>',
+  },
+  {
+    title: '📝 Einladung mit oder ohne Eltern formulieren:',
+    description:
+      '<ul><li>📌 Falls Eltern dabeibleiben dürfen: <i>"Die Eltern sind herzlich eingeladen, mit uns zu feiern! Wir freuen uns auf eine schöne gemeinsame Zeit."</i></li><li>📌 Falls es eine reine Kinderparty ist: <i>"Die Kinder sind herzlich eingeladen, ohne Begleitung zu feiern. Wir sorgen für eine liebevolle Betreuung!"</i></li></ul>',
+  },
+  {
+    title: '🛑 Häufige Fehler vermeiden:',
+    description:
+      '<ul><li>❌ <b>Keine klare Kommunikation</b> → Eltern wissen nicht, ob sie bleiben sollen oder nicht.</li>  <li>❌ <b>Zu viele Eltern dabeihaben</b> → Kann die Party zu "erwachsen" machen.</li>  <li>❌ <b>Kinder zwingen, ohne Eltern zu bleiben</b> → Falls sich ein Kind unwohl fühlt, sollte man flexibel reagieren.</li></ul>',
+  },
+
+]}
+image={{
+  src: kindergeburtstagvierjahrespieleideen,
+  alt: 'Colorful Image',
+}}
+>
+<Fragment slot="content">
+  <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">👨‍👩‍👧‍👦 Mit oder ohne Eltern feiern?</h2>
+  <p>Die Entscheidung, ob Eltern beim Kindergeburtstag dabeibleiben oder nicht, hängt vom Charakter der Kinder, der Gruppengröße und dem Ort der Feier ab.</p>
+</div>
+</Fragment>
+</Content>
+
+
+
+
+
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    id="planung"
+    bg="bg-green-50 dark:bg-transparent"
+    title="Stressfreie Planung des 4. Geburtstages 📅"
+    subtitle="Mit einer guten Vorbereitung wird der Geburtstag entspannt und unvergesslich! Hier ist eine Schritt-für-Schritt-Checkliste, damit du nichts vergisst:"
+    items={[
+      {
+        title: '4 Wochen vorher 🗓 Grundplanung starten',
+        description:
+          '✔️ Motto wählen<br> ✔️ Gästeliste festlegen<br>✔️ Ort der Feier bestimmen<br>✔️ Einladungen gestalten & verschicken',
+      },
+      {
+        title: '2 Wochen vorher 🛒 Spiele & Deko organisieren',
+        description:
+          '✔️ Spiele & Aktivitäten planen<br>✔️ Deko & Mitgebsel besorgen<br>✔️ Musik & Playlists vorbereiten<br>✔️ Falls nötig: Kuchen oder Snacks bestellen',
+      },
+      {
+        title: '1 Woche vorher 🍰 Feinschliff',
+        description:
+          '✔️ Lebensmittel & Getränke einkaufen<br>✔️ Bastel- & Spielezubehör vorbereiten<br>✔️ Kamera oder Handy für Fotos bereithalten<br>✔️ Falls nötig: Helfer oder zusätzliche Betreuung organisieren',
+      },
+      {
+        title: '1 Tag vorher 🎈 Letzte Vorbereitungen',
+        description:
+          '✔️ Raum oder Garten dekorieren<br>✔️ Geschenke einpacken<br>✔️ Spiele & Stationen aufbauen<br>✔️ Torte oder Muffins backen',
+      },
+    ]}
+  >
+  </Features2>
+
+  <!-- Einladungskarte **************** -->
+
+<Content
+
+id="einladungskarte"
+class="bg-yellow-50 p-8 rounded-lg"
+isReversed
+items={[
+  {
+    title: '📌 Was gehört in eine perfekte Einladung?',
+    description:
+      '<ul><li>📅 <b>Datum & Uhrzeit:</b> Wann startet und endet die Feier?</li><li>📍 <b>Ort:</b> Adresse der Feier (zuhause, Spielplatz, Indoor-Halle).</li><li>🎭 <b>Motto:</b> Falls die Feier ein Motto hat (z. B. Dino, Prinzessin, Piraten).</li>  <li>🍰 <b>Verpflegung:</b> Gibt es Kuchen, Snacks oder Mittagessen?</li> <li>📞 <b>Rückmeldung:</b> Bitte um Zusage oder Absage mit Telefonnummer.</li>  <li>👨‍👩‍👧 <b>Mit oder ohne Eltern?</b> Sollen die Eltern bleiben oder nur bringen & abholen?</li></ul>',
+  },
+  {
+    title: '📌 Einladungskarten selber basteln oder kaufen?',
+    description:
+      '<ul><li>🎨 **DIY Einladungskarten:** Selbst gestalten mit Fingerfarben, Glitzer oder Aufklebern – eine tolle Bastelaktivität mit dem Geburtstagskind!</li><li>🖨️ **Online-Vorlagen & Druck:** Es gibt viele kostenlose Vorlagen zum Ausdrucken.</li>  <li>📱 **Digitale Einladungen:** WhatsApp, E-Mail oder Online-Karten – praktisch & schnell!</li></ul>',
+  },
+  {
+    title: '💡 Tipp:',
+    description:
+      'Einladungskarten etwa <b>2-3 Wochen vorher</b> verteilen, damit die Gäste genug Zeit zum Planen haben! <br><br><b><a href="#einladungskarte">🚀 Brauchst du eine Vorlage für Einladungstexte? 😊</a></b> ',
+  },
+
+
+]}
+image={{
+  src: kindergeburtstagvierjahrespieleideen,
+  alt: 'Colorful Image',
+}}
+>
+<Fragment slot="content">
+  <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Einladungskarten zum 4. Geburtstag 🔖</h2>
+  <p>Die Einladungskarte ist der erste Eindruck der Party und gibt den kleinen Gästen & Eltern alle wichtigen Infos.<br>
+  </p>
+</div>
+</Fragment>
+</Content>
+
+
+<!-- DEKO **************** -->
+
+<Content
+
+id="deko"
+items={[
+  {
+    title: '📌 Grundelemente für eine perfekte Party-Deko:',
+    description:
+      '<ul><li>🎨 <b>Farben & Motto:</b> Wähle 2–3 Hauptfarben passend zum Thema (z. B. Blau & Grün für eine Dino-Party oder Pink & Gold für eine Prinzessinnen-Feier).</li><li>🎈 <b>Luftballons & Girlanden:</b> Ein Muss für jede Feier – gerne mit Zahlen-Ballons oder Figuren passend zum Motto.</li><li>🍽️ <b>Tischdeko:</b> Bunte Teller, Servietten & Becher passend zum Party-Motto oder mit personalisierten Namenskarten.</li><li>🖼️ <b>Wanddeko:</b> Banner, Poster oder DIY-Dekoration mit Bastelpapier & Lichterketten.</li><li>🎊 <b>Party-Eingang:</b> Begrüße die Gäste mit einem Luftballonbogen oder einer Willkommens-Tafel!</li></ul>',
+  },
+  {
+    title: '📌 DIY-Deko-Ideen zum Selbermachen:',
+    description:
+      '<ul><li>✂️ **Girlanden & Wimpelketten:** Bastelspaß mit dem Geburtstagskind – einfach aus buntem Papier & Schnur gestalten.</li><li>🎭 **Masken & Hüte:** Passend zum Motto können die Kinder eigene Partyhüte oder Masken basteln.</li><li>🕯️ **Leuchtende Highlights:** LED-Lichterketten oder Gläser mit leuchtenden Knicklichtern zaubern eine magische Stimmung.</li></ul>',
+      },
+  {
+    title: '💡 Tipp:',
+    description:
+      'Falls du wenig Zeit hast, gibt es fertige Deko-Sets passend zu jedem Motto online oder im Handel! 🎉',
+  },
+
+]}
+image={{
+  src: kindergeburtstagvierjahrespieleideen,
+  alt: 'Colorful Image',
+}}
+>
+<Fragment slot="content">
+  <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">🎈 Deko für den 4. Geburtstag – So wird die Feier zum Hingucker! 🎨</h2>
+  <p>Die richtige Dekoration schafft eine besondere Atmosphäre und macht den Kindergeburtstag unvergesslich. Mit Farben, Luftballons und passenden Details wird jeder Raum zur Partylocation!
+  </p>
+</div>
+</Fragment>
+</Content>
+
+<Features2
+    id="essen"
+    bg="bg-cyan-50 dark:bg-transparent"
+    title="🍰 Die besten Gerichte, Snacks & Kuchen für den 4. Geburtstag 🎂"
+    columns={3}
+    subtitle="Ein leckerer Geburtstagskuchen, einfache Snacks und kindgerechte Speisen sorgen für zufriedene kleine Gäste. Hier sind die besten Ideen für eine stressfreie und leckere Verpflegung!"
+    items={[
+      {
+        title: '🎂 Die beliebtesten Geburtstagskuchen:',
+        description:
+          '<ul><li>🍓 <b>Obstkuchen oder Erdbeer-Torte:</b> Fruchtig, leicht & beliebt bei Kindern.</li><li>🍫 <b>Schokokuchen oder Brownies:</b> Klassiker, der immer gut ankommt!</li><li>🦸 <b>Motto-Torte:</b> Mit Figuren oder essbaren Aufdrucken passend zum Party-Thema.</li><li>🧁 <b>Muffins & Donuts:</b> Perfekt für kleine Hände & weniger Chaos als mit großen Torten.</li><li>🎂 <b>Regenbogen-Kuchen:</b> Mit bunten Schichten aus Lebensmittelfarbe – ein Hingucker!</li></ul>',
+      },
+      {
+        title: '🥪 Einfache & schnelle Snacks:',
+        description:
+          '<ul><li>🥕 <b>Gemüse-Sticks mit Dip:</b> Gesund & lecker – Karotten, Gurken & Paprika mit Kräuterquark.</li><li>🍕 <b>Mini-Pizzen:</b> Entweder selbst belegen oder aus Blätterteig gebacken.</li><li>🧀 <b>Käse- & Trauben-Spieße:</b> Einfach, aber ein echter Partyhit!</li><li>🍞 <b>Bunte Sandwiches:</b> In Stern-, Herz- oder Tierform ausgestochen.</li><li>🌭 <b>Würstchen im Schlafrock:</b> Würstchen in Blätterteig eingebacken – immer beliebt.</li></ul>',
+      },
+      {
+        title: '🍹 Getränke für Kinder:',
+        description:
+          '<ul><li>🍎 <b>Fruchtschorlen:</b> Apfelschorle oder Orangensaft mit Wasser verdünnt.</li><li>🍓 <b>Selbstgemachte Limonade:</b> Mit Beeren, Minze & Zitrone.</li><li>🥛 <b>Bunte Milchshakes:</b> Erdbeer-, Bananen- oder Kakao-Milchshake als gesunde Alternative.</li></ul>',
+      },
+    ]}
+  >
+  </Features2>
+
+
+  <ContactUs
+  id="checkliste"
+  title="Jetzt kostenlose PDF Checkliste downloaden!"
+  subtitle="Downloade dir jetzt die kostenlose PDF Checkliste mit allen Steps für einen entspannten und schönen 4. Geburtstag"
+  inputs={[
+    {
+      type: 'text',
+      name: 'name',
+      label: 'Name',
+    },
+    {
+      type: 'email',
+      name: 'email',
+      label: 'Email',
+    },
+  ]}
+  disclaimer={{
+    label:
+      'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+  }}
+  description=""
+/>
+
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    id="faq"
+    bg="bg-orange-50 dark:bg-transparent"
+    title="Zusammengefasst die wichtigsten Fragen für den vierten Geburtstag"
+    items={[
+      {
+        title: 'Wie lange sollte der Geburtstag dauern? 🎉',
+        description:
+          'Für 4-Jährige ist eine Dauer von 1,5 bis 3 Stunden ideal, da sie sich noch nicht lange konzentrieren können und schnell müde werden. Plane eine kleine Pause mit Snacks ein, um die Kinder zwischendurch zu entspannen. 😊',
+        icon: 'tabler:chevrons-right',
+        },
+      {
+        title: 'Wie viele Kinder sollte ich einladen? 🎈',
+        description: `Eine gute Faustregel lautet: Alter des Kindes + 1, also etwa 5 Gäste für einen 4. Geburtstag. So bleibt die Gruppe überschaubar, und es wird nicht zu laut oder chaotisch. 😊! `,
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Was sind gute Gastgeschenke? 🎁',
+        description:
+          'Kleine Malbücher, Sticker, Seifenblasen oder selbstgemachte Kekse sind tolle Mitgebsel für 4-Jährige. Auch kleine Spielzeuge wie Flummis oder Tierfiguren kommen gut an – am besten etwas, das zum Motto der Party passt! 🎨🫧🍪',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Welche Uhrzeit ist ideal für den Kindergeburtstag? ⏰',
+        description: `Für 4-Jährige ist eine Startzeit zwischen 14:00 und 15:00 Uhr ideal, da sie dann ausgeruht sind und genug Zeit zum Spielen haben. Falls dein Kind noch Mittagsschlaf macht, plane die Feier besser ab 15:30 Uhr, um Übermüdung zu vermeiden. 😊`,
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Mit oder ohne Eltern feiern? 👨‍👩‍👧‍👦',
+        description: `Bei 4-Jährigen ist es üblich, dass einige Eltern dabeibleiben, vor allem, wenn die Kinder noch unsicher sind oder nicht oft alleine woanders waren. Eine gute Lösung: Eltern können die ersten 30 Minuten bleiben und dann gehen, wenn sich die Kinder wohlfühlen. Alternativ kannst du in der Einladung erwähnen, ob die Eltern eingeladen sind oder nur zum Abholen kommen sollen. 😊`,
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Muss man den 4. Geburtstag schon groß feiern? 🎂',
+        description: `Nein, es gibt keinen Zwang! 😊 Manche Kinder freuen sich riesig auf eine Party mit Freunden, andere sind noch zu schüchtern oder schnell überfordert. Eine kleine Feier mit der Familie oder ein Ausflug (z. B. in den Zoo oder auf einen Spielplatz) kann genauso schön sein. Wichtig ist, dass sich das Geburtstagskind wohlfühlt! 🎈✨`,
+        icon: 'tabler:chevrons-right',
+      },
+    ]}
+  >
+  </FAQs>
+
+</Layout>
